@@ -10,7 +10,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-white/40 shadow-md">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src="/logo.png" alt="VICZ Ltd Logo" className="h-20 w-auto" />
+          <img src="/logo.png" alt="Logo" className="h-20 w-auto" />
         </Link>
         <nav className="hidden md:flex space-x-4">
           {navItems.map(item => (
