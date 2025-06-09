@@ -1,0 +1,50 @@
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.page img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.page h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #1e40af;
+}
+
+.page p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.page ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  color: #4b5563;
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.job-role {
+  background-color: #eff6ff;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #bfdbfe;
+}
+
+.job-role h2 {
+  color: #1e3a8a;
+  margin-bottom: 0.4rem;
+}
+
+.job-role p {
+  margin-bottom: 0.3rem;
+}
