@@ -13,7 +13,6 @@ export default function Header() {
         {/* Logo - Left */}
         <Link to="/" className="flex items-center">
           <img src="/logo.png" alt="Logo" className="h-10 w-auto" />
->>>>>>> f6aa438 (updated)
         </Link>
 
         {/* Desktop Navigation - Right */}
