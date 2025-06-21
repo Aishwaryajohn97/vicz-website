@@ -1,22 +1,46 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {
+  FaCloud,
+  FaLaptopCode,
+  FaNetworkWired,
+  FaServer,
+  FaShieldAlt,
+  FaMobileAlt,
+  FaDatabase
+} from 'react-icons/fa';
+import './Home.css';
 
 export default function Home() {
   return (
-    <section className="min-h-screen bg-gradient-to-bl from-indigo-200 to-purple-200 flex flex-col justify-center items-center text-center px-4">
-      <h1 className="fade-in text-5xl font-extrabold text-dark mb-4">
-        Empowering Your Digital Future
-      </h1>
-     <p className="fade-in text-lg text-black max-w-3xl mb-8">
+    <div className="hero-section home">
+      <div className="floating-icons">
+        <FaCloud className="icon it-icon icon1" />
+        <FaLaptopCode className="icon it-icon icon2" />
+        <FaNetworkWired className="icon it-icon icon3" />
+        <FaServer className="icon it-icon icon4" />
+        <FaShieldAlt className="icon it-icon icon5" />
+        <FaMobileAlt className="icon it-icon icon6" />
+        <FaDatabase className="icon it-icon icon7" />
+      </div>
 
-        VICZ Ltd delivers cutting-edge IT and management solutions—cloud architecture, DevOps, data engineering, cybersecurity, and more—to help your business thrive in a digital world.
-      </p>
-      <Link to="/contact" className="mt-4 inline-block bg-primary text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-primary-dark transition">
-        Get Started
-      </Link>
-    </section>
+      <div className="hero-content">
+        <p className="hero-tagline">Technology & IT Solutions</p>
+        <h1 className="hero-title">
+          Empowering Businesses<br />
+          with Smart IT Services
+        </h1>
+        <p className="hero-desc">
+          VICZ Ltd delivers tailored technology and consulting services to power innovation,
+          efficiency, and growth for businesses around the world.
+        </p>
+        <a href="/services" className="hero-btn">Explore Our Services</a>
+      </div>
+    </div>
   );
 }
+
+
+
 
 
 

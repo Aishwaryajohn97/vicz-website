@@ -1,34 +1,54 @@
-import React from 'react';
+import React from "react";
+import {
+  FaCloud,
+  FaLaptopCode,
+  FaNetworkWired,
+  FaServer,
+  FaShieldAlt,
+  FaMobileAlt,
+  FaDatabase,
+} from "react-icons/fa";
+import "./About.css";
 
-const About = () => (
-  <section className="min-h-screen bg-gradient-to-br from-white to-indigo-100 text-dark px-4 py-20">
-    <div className="max-w-5xl mx-auto">
-      <h2 className="text-4xl font-bold mb-6">About VICZ Ltd</h2>
-      <p className="text-lg leading-relaxed mb-4">
-        At VICZ Ltd, we help organizations transform digitally by providing top-tier IT
-        and management solutions. With expertise in cloud architecture, DevOps, AI, data
-        engineering, cybersecurity, and more, we deliver scalable, future-ready systems.
-      </p>
-      <p className="text-lg leading-relaxed mb-4">
-        We believe in innovation, partnership, and measurable impact. Our clients range from
-        startups to large enterprises, all leveraging our expertise to stay competitive in a
-        rapidly evolving digital landscape.
-      </p>
-      <p className="text-lg leading-relaxed">
-        Our team is built on trust, transparency, and passion. We’re growing—and we’d love you
-        to join us on this journey.
-      </p>
+export default function About() {
+  return (
+    <div className="about-section">
+      {/* Floating icons */}
+      <div className="floating-icons">
+        <FaCloud className="icon it-icon icon1" />
+        <FaLaptopCode className="icon it-icon icon2" />
+        <FaNetworkWired className="icon it-icon icon3" />
+        <FaServer className="icon it-icon icon4" />
+        <FaShieldAlt className="icon it-icon icon5" />
+        <FaMobileAlt className="icon it-icon icon6" />
+        <FaDatabase className="icon it-icon icon7" />
+      </div>
+
+      <div className="about-content">
+        <h1>About VICZ Ltd</h1>
+        <p>
+          VICZ Ltd is committed to delivering innovative technology solutions
+          tailored to the unique needs of businesses worldwide. With a strong
+          emphasis on collaboration, integrity, and cutting-edge expertise, we
+          empower organizations to transform digitally and achieve sustainable
+          growth.
+        </p>
+        <p>
+          Our team comprises seasoned professionals in software development,
+          cloud computing, cybersecurity, data analytics, and IT consulting. We
+          pride ourselves on building long-lasting partnerships with our clients,
+          fostering success through customized IT services and strategic
+          innovation.
+        </p>
+        <p>
+          At VICZ Ltd, your vision is our mission. We continuously evolve to meet
+          the dynamic landscape of technology, ensuring your business stays ahead
+          of the curve.
+        </p>
+      </div>
     </div>
-  </section>
-);
-
-export default About;
-
-
-
-
-
-
+  );
+}
 
 
 

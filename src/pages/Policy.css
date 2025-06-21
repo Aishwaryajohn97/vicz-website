@@ -1,0 +1,49 @@
+.policy-section {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  line-height: 1.7;
+}
+
+.policy-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #003366;
+  text-align: center;
+}
+
+.policy-section h2 {
+  font-size: 1.8rem;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  color: #00509e;
+}
+
+.policy-section p {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.policy-section ul {
+  list-style-type: disc;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.policy-section ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+.policy-section a {
+  color: #00509e;
+  text-decoration: none;
+}
+
+.policy-section a:hover {
+  text-decoration: underline;
+}

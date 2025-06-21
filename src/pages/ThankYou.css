@@ -1,0 +1,46 @@
+.thankyou-section {
+  background: linear-gradient(to right, #e3f2fd, #f0f7ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+}
+
+.thankyou-container {
+  background-color: white;
+  padding: 3rem 2rem;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.thankyou-container h1 {
+  font-size: 2.5rem;
+  color: #254f7d;
+  margin-bottom: 1rem;
+}
+
+.thankyou-container p {
+  font-size: 1.1rem;
+  color: #4a729e;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.back-home-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #254f7d;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.back-home-btn:hover {
+  background-color: #1a3d66;
+}

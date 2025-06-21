@@ -1,43 +1,114 @@
-import React from 'react';
+import React from "react";
+import {
+  FaCloud,
+  FaCogs,
+  FaShieldAlt,
+  FaChartLine,
+  FaRobot,
+  FaMobileAlt,
+  FaNetworkWired,
+  FaServer,
+  FaHeadset,
+  FaProjectDiagram,
+} from "react-icons/fa";
+import "./Services.css";
 
 const services = [
-  "Cloud Architecture & Migration",
-  "DevOps & CI/CD Automation",
-  "Cybersecurity Strategy & Ops",
-  "Data Engineering & Analytics",
-  "AI & Machine Learning Integration",
-  "Digital Transformation Consulting",
-  "Mobile & Web Applications",
-  "Infrastructure Management",
-  "IT Support & Maintenance",
-  "Project & Product Management"
+  {
+    title: "Cloud Architecture & Migration",
+    icon: <FaCloud />,
+    description:
+      "Designing scalable cloud infrastructures and seamlessly migrating your existing systems to the cloud with minimal downtime.",
+  },
+  {
+    title: "DevOps & CI/CD Automation",
+    icon: <FaCogs />,
+    description:
+      "Implementing continuous integration and delivery pipelines to accelerate software releases with reliability.",
+  },
+  {
+    title: "Cybersecurity Strategy & Ops",
+    icon: <FaShieldAlt />,
+    description:
+      "Building robust cybersecurity frameworks to safeguard your assets and ensure compliance with industry standards.",
+  },
+  {
+    title: "Data Engineering & Analytics",
+    icon: <FaChartLine />,
+    description:
+      "Crafting data pipelines and analytics solutions that provide actionable business insights.",
+  },
+  {
+    title: "AI & Machine Learning Integration",
+    icon: <FaRobot />,
+    description:
+      "Leveraging artificial intelligence to automate processes and enhance decision-making capabilities.",
+  },
+  {
+    title: "Digital Transformation Consulting",
+    icon: <FaMobileAlt />,
+    description:
+      "Guiding your enterprise through digital modernization to unlock new growth opportunities.",
+  },
+  {
+    title: "Mobile & Web Applications",
+    icon: <FaNetworkWired />,
+    description:
+      "Developing responsive and high-performance applications tailored to your business needs.",
+  },
+  {
+    title: "Infrastructure Management",
+    icon: <FaServer />,
+    description:
+      "Proactively managing IT infrastructure to ensure maximum uptime and efficiency.",
+  },
+  {
+    title: "IT Support & Maintenance",
+    icon: <FaHeadset />,
+    description:
+      "Offering 24/7 technical support and maintenance to keep your operations smooth and uninterrupted.",
+  },
+  {
+    title: "Project & Product Management",
+    icon: <FaProjectDiagram />,
+    description:
+      "Providing expert leadership to deliver projects on time, within scope, and budget.",
+  },
 ];
 
-const Services = () => (
-  <section className="min-h-screen bg-gradient-to-bl from-indigo-50 to-purple-100 text-dark px-4 py-20">
-    <div className="max-w-6xl mx-auto text-center mb-12">
-      <h2 className="text-4xl font-bold mb-8">Our Services</h2>
-      <p className="text-lg leading-relaxed">
-        VICZ Ltd offers a wide range of IT and management services to support your digital growth:
-      </p>
-    </div>
-    <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      {services.map((service, idx) => (
-        <div
-          key={idx}
-          className="glass p-6 hover:scale-105 transition transform"
-        >
-          <h3 className="text-xl font-semibold mb-2">{service}</h3>
-          <p className="text-gray-700">
-            Expert support to help you plan, deploy, and manage {service.toLowerCase()} effectively.
-          </p>
-        </div>
-      ))}
-    </div>
-  </section>
-);
+export default function Services() {
+  return (
+    <section className="services-section">
+      <div className="floating-icons">
+        {/* Use some icons related to services */}
+        <FaCloud className="icon it-icon icon1" />
+        <FaCogs className="icon it-icon icon2" />
+        <FaShieldAlt className="icon it-icon icon3" />
+        <FaRobot className="icon it-icon icon4" />
+        <FaServer className="icon it-icon icon5" />
+      </div>
 
-export default Services;
+      <div className="services-header">
+        <h2>Our Services</h2>
+        <p>
+          VICZ Ltd offers a wide range of IT and management services to support
+          your digital growth:
+        </p>
+      </div>
+
+      <div className="services-grid">
+        {services.map(({ title, icon, description }, idx) => (
+          <div key={idx} className="service-card">
+            <div className="service-icon">{icon}</div>
+            <h3>{title}</h3>
+            <p>{description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 
 
 

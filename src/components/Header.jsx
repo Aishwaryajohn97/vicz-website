@@ -1,37 +1,53 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import './Header.css';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const navItems = ['Home','About','Services','Careers','Contact'];
+  const navItems = ['Home', 'About', 'Services', 'Careers', 'Contact'];
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-white/40 shadow-md">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <header className="header">
+      <div className="w-full flex items-center justify-between max-w-7xl mx-auto">
+        {/* Logo - Left */}
         <Link to="/" className="flex items-center">
+<<<<<<< HEAD
           <img src="/Logo.png" alt="Logo" className="h-20 w-auto" />
+=======
+          <img src="/logo.png" alt="Logo" className="h-10 w-auto" />
+>>>>>>> f6aa438 (updated)
         </Link>
-        <nav className="hidden md:flex space-x-4">
+
+        {/* Desktop Navigation - Right */}
+        <nav className="nav-links hidden md:flex">
           {navItems.map(item => (
-            <Link key={item} to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-              className="relative btn-header text-dark group hover:text-white"
+            <Link
+              key={item}
+              to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+              className="group"
+              onClick={() => setOpen(false)}
             >
               {item}
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-primary group-hover:w-full transition-all duration-300"></span>
+              <span></span>
             </Link>
           ))}
         </nav>
-        <button onClick={()=>setOpen(!open)} className="md:hidden text-dark">
-          {open ? <FaTimes size={24}/> : <FaBars size={24}/>}
+
+        {/* Mobile Menu Toggle */}
+        <button onClick={() => setOpen(!open)} className="md:hidden">
+          {open ? <FaTimes size={24} color="#001f3f" /> : <FaBars size={24} color="#001f3f" />}
         </button>
       </div>
+
+      {/* Mobile Nav */}
       {open && (
-        <div className="md:hidden bg-white/80 backdrop-blur-md shadow-md px-4 py-3 space-y-2">
+        <div className="mobile-menu md:hidden">
           {navItems.map(item => (
-            <Link key={item} to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
-              onClick={()=>setOpen(false)}
-              className="block btn-header text-dark text-center w-full bg-transparent hover:bg-primary hover:text-white"
+            <Link
+              key={item}
+              to={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
+              onClick={() => setOpen(false)}
             >
               {item}
             </Link>

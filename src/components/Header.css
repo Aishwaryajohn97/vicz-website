@@ -1,36 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 .header {
+  background-color: #ffffff;
+  color: #001f3f;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #1e40af;
-  color: white;
+  font-family: 'Poppins', sans-serif;
   position: sticky;
   top: 0;
-  z-index: 1000;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem; /* ⬅️ Equal spacing between nav links */
 }
 
-.nav-links li a {
-  color: white;
+.header a {
+  color: #001f3f;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
+  position: relative;
   transition: color 0.3s ease;
 }
 
-.nav-links li a:hover,
-.nav-links li a.active {
-  color: #60a5fa; /* light blue */
+.header a:hover {
+  color: #00bcd4;
 }
 
+.header a span {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00bcd4;
+  transition: width 0.3s ease;
+}
+
+.header a:hover span {
+  width: 100%;
+}
+
+.mobile-menu {
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mobile-menu a {
+  display: block;
+  color: #001f3f;
+  text-align: center;
+  padding: 0.75rem 0;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  background-color: #00bcd4;
+  color: #ffffff;
+}

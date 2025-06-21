@@ -9,6 +9,7 @@ import Careers from './pages/Careers';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
+import ThankYou from './pages/ThankYou'; // ✅ Import the ThankYou component
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsConditions />} />
+          <Route path="/thank-you" element={<ThankYou />} /> {/* ✅ Add route for ThankYou page */}
         </Routes>
       </main>
       <Footer />
@@ -31,6 +33,4 @@ function App() {
 }
 
 export default App;
-
-
 
