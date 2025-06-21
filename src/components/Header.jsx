@@ -12,9 +12,6 @@ export default function Header() {
       <div className="w-full flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo - Left */}
         <Link to="/" className="flex items-center">
-<<<<<<< HEAD
-          <img src="/Logo.png" alt="Logo" className="h-20 w-auto" />
-=======
           <img src="/logo.png" alt="Logo" className="h-10 w-auto" />
 >>>>>>> f6aa438 (updated)
         </Link>
